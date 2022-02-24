@@ -1,4 +1,4 @@
-# computer-science-code-for-peeps
+# computer-science-code
 
 yo the code is in the actual code folder for cleanliness
 
