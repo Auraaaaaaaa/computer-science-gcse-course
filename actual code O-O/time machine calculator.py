@@ -5,6 +5,9 @@ def beans():
     if (a > 2359):
         print("No! That is a time in the future you supine protoplasmic invertebrate jelly")
         beans()
+    elif (a < 1000):
+        print("no thats not 24-hr time silly")
+        beans()
     print("Enter a new time to calculate against")
     b = input()
     if b > a:
