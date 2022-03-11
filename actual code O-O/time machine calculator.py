@@ -1,7 +1,7 @@
 def beans():
     print("hello")
     print("Enter the time in the future, with no colon between the numbers")
-    a = input()
+    a = int(input())
     if (a > 2359):
         print("No! That is a time in the future you supine protoplasmic invertebrate jelly")
         beans()
@@ -9,7 +9,7 @@ def beans():
         print("no thats not 24-hr time silly")
         beans()
     print("Enter a new time to calculate against")
-    b = input()
+    b = int(input())
     if b > a:
         print("That's in the future from the first time! Try again")
         beans()
