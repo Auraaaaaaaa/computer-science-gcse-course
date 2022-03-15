@@ -1,4 +1,4 @@
-
+import threading
 def isprime(num):
     flag = False
     if num > 1:
@@ -18,6 +18,8 @@ for i in range(1,num+1):
        if num % 1 == 0:
             if isprime(i):
                 factors.append(i)
-            
+                print(i)
+            else:
+                print(f"Not: {i}")
 
 print ("Factors of {} = {}".format(num,factors))

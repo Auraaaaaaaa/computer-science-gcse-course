@@ -1,8 +1,12 @@
 num = 1
+array = []
+
 while num <=1000:
     if num % 3 == 0:
-        print(num)
+        array.append(num)
     
     elif num % 5 == 0:
-        print(num)
+        array.append(num)
     num = num + 1
+total = sum(array)
+print(total)
