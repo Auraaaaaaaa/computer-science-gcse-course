@@ -11,9 +11,7 @@ def isprime(num):
     else:
       return True
 
-nua=int(input("enter a number"))
-
-num = int(math.sqrt(nua))
+num=int(input("enter a number"))
 
 factors=[]
 for i in range(1,num+1):
@@ -24,5 +22,7 @@ for i in range(1,num+1):
                 print(i)
             else:
                 print(f"Not: {i}")
+    if i >= int(math.sqrt(num)):
+        break
 
 print ("Factors of {} = {}".format(num,factors))

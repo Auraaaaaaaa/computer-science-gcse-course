@@ -6,9 +6,18 @@ def ispalindrome(str):
     return True
 
 num1 = 1
-num2 = 1
+num2 = 2
 tstring = ""
-while num1 and num2 <100000:
+def donum2(num2):
+        while num2 <1000:
+            target = num1 * num2
+            tstring = str(target)
+            half1 = tstring[:len(tstring)//2]
+            half2 = tstring[len(tstring)//2]
+            if ispalindrome(tstring):
+                print(f"Palindrome: {tstring}. Num1: {num1} Num2: {num2}")
+            num2 = num2 + 1
+while num1 <1000:
     target = num1 * num2
     tstring = str(target)
     half1 = tstring[:len(tstring)//2]
@@ -16,4 +25,4 @@ while num1 and num2 <100000:
     if ispalindrome(tstring):
         print(f"Palindrome: {tstring}. Num1: {num1} Num2: {num2}")
     num1 = num1 + 1
-    num2 = num2 + 1
+    donum2(num2)
