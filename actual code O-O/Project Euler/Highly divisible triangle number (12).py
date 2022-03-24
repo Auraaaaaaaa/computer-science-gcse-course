@@ -1,0 +1,2 @@
+array = []
+tnum = 1
