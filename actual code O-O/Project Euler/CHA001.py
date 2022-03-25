@@ -9,35 +9,35 @@ onep = 0
 print("Enter a number of pence to do things to:")
 num = int(input())
 def e():
-    if num - 200 > 0:
+    if num - 200 >= 0:
         twopndcoins = twopndcoins + 1
         num = num - 200
         e()
-    if num - 100 > 0:
+    if num - 100 >= 0:
         pndcoins = pndcoins + 1
         num = num - 100
         e()
-    if num - 50 > 0:
+    if num - 50 >= 0:
         fiftyp = fiftyp + 1
         num = num - 50
         e()
-    if num - 20 > 0:
+    if num - 20 >= 0:
         twntyp = twntyp + 1
         num = num - 20
         e()
-    if num - 10 > 0:
+    if num - 10 >= 0:
         tenp = tenp + 1
         num = num - 10
         e()
-    if num - 5 > 0:
+    if num - 5 >= 0:
         fivep = fivep + 1
         num = num - 5
         e()
-    if num - 2 > 0:
+    if num - 2 >= 0:
         twop = twop + 1
         num = num - 10
         e()
-    if num - 1 > 0:
+    if num - 1 >= 0:
         onep = onep + 1
         num = num - 1
         e()

@@ -1,2 +1,1 @@
-array = []
-tnum = 1
+#calculate the largest triangular number with 500 divisors
